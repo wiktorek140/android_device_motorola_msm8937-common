@@ -4,12 +4,12 @@ on fs
     symlink /dev/block/bootdevice/by-name/oem /dev/block/bootdevice/by-name/vendor
 
 # separate copy needed to use /sbin/linker instead of /system/bin/linker
-service sbinqseecomd /sbin/qseecomd
-    oneshot
-    disabled
-    user root
-    group root
-    seclabel u:r:recovery:s0
+#service sbinqseecomd /sbin/qseecomd
+#    oneshot
+#    disabled
+#    user root
+#    group root
+#    seclabel u:r:recovery:s0
 
-on property:ro.crypto.state=encrypted
-    start sbinqseecomd
+#on property:ro.crypto.state=encrypted
+#    start sbinqseecomd

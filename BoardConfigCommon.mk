@@ -42,7 +42,7 @@ TW_HAS_EDL_MODE := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
-TW_INCLUDE_CRYPTO := true
+#TW_INCLUDE_CRYPTO := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
