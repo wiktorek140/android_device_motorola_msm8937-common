@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcryptfs_hw
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    fbe.data.wrappedkey=false
+
 # Time Zone data
 PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
