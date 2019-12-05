@@ -378,6 +378,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# Vintf
+PRODUCT_PACKAGES += \
+    vintf
+
 # VNDK
 # Update this list with what each blob is actually for
 # libstdc++: camera.msm8937
