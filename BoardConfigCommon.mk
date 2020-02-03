@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/motorola/msm8937-common
+COMMON_PATH := device/motorola/msm8937-common_49
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
@@ -13,6 +13,8 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_SUFFIX := _64
+
+BOARD_VENDOR := motorola-qcom
 
 # Architecture
 TARGET_ARCH := arm64
@@ -130,7 +132,11 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937-4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+#KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true

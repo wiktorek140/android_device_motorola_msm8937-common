@@ -15,7 +15,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hannah james montana,$(TARGET_DEVICE)),)
+ifneq ($(filter montana_49 ,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
