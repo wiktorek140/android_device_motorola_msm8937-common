@@ -19,7 +19,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
 # Inherit from proprietary
-$(call inherit-product, vendor/motorola/msm8937-common/msm8937-common-vendor.mk)
+$(call inherit-product, vendor/motorola/msm8937-common-49/msm8937-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -30,7 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Properties
-$(call inherit-product, device/motorola/msm8937-common/vendor_prop.mk)
+$(call inherit-product, device/motorola/msm8937-common_49/vendor_prop.mk)
 
 # Audio
 PRODUCT_PACKAGES += \

@@ -15,9 +15,9 @@
 # limitations under the License.
 
 # Inherit from the proprietary version
-include vendor/motorola/msm8937-common/BoardConfigVendor.mk
+include vendor/motorola/msm8937-common-49/BoardConfigVendor.mk
 
-COMMON_PATH := device/motorola/msm8937-common
+COMMON_PATH := device/motorola/msm8937-common_49
 BOARD_VENDOR := motorola-qcom
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
@@ -143,7 +143,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937-4.9
 TARGET_KERNEL_CLANG_COMPILE := true
 #KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
