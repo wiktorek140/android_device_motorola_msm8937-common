@@ -278,6 +278,7 @@ PRODUCT_PACKAGES += \
     init.oem.rc \
     init.qcom.rc \
     init.target.rc \
+    init.msm.usb.configfs.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
