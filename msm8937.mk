@@ -316,7 +316,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mmi.rc \
     init.mmi.usb.rc \
-    init.usb.configfs.rc \
+    init.msm.usb.configfs.rc \
     init.qcom.rc \
     ueventd.qcom.rc
 
