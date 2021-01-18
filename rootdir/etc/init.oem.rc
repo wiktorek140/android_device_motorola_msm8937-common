@@ -6,7 +6,9 @@ on init
 on property:ro.vendor.hw.dualsim=true
     setprop ro.vendor.radio.imei.sv 6
     setprop ro.telephony.default_network 10,0
+    setprop persist.radio.multisim.config dsds
 
 on property:ro.vendor.hw.dualsim=false
     setprop ro.vendor.radio.imei.sv 11
     setprop ro.telephony.default_network 10
+    setprop persist.radio.multisim.config ""
