@@ -183,10 +183,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8937
 
 # LineageActions
-ifeq ($(filter ahannah rhannah,$(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
-    LineageActions
-endif
+#ifeq ($(filter ahannah rhannah,$(TARGET_DEVICE)),)
+#PRODUCT_PACKAGES += \
+#    LineageActions
+#endif
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
